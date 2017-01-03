@@ -25,6 +25,7 @@ Every project is stored in what's called a repository, or "repo" for short, whic
 6. Pull your changes
 
    The hird level of saved files in Git is the official repo. While you can "push" commits to your own individual project repos, there are often conflicting commits within shared codebases. This is solved by using "pull". This pushes the code to the official repo, but does not add it to the actual codebase. Instead, others can edit and make comments to your commit, until it is deemed satisfactory. Then it is "merged," where it replaces the old code.
+
 ## Getting Started on the Project
 
 ### Set up React-Native (Enable your computer to run the app)
@@ -73,20 +74,27 @@ Every project is stored in what's called a repository, or "repo" for short, whic
   react-native run-ios
   ```
 
-## Setting up the App
-1. Clone the app
+### Setting up the App
+1. Fork the app
+
+   First click fork on the project page, then click "Clone or download," copy the URL, and enter the following commands (substitute the URL where shown)
+   
   ```
   cd ~/Documents/React-Native-Projects
-  git clone https://github.com/tanabs18/GraphAssistant.git
+  git clone URLGOESHERE
   git remote add upstream https://github.com/tanabs18/GraphAssistant.git
   git remote -v
   ```
+  
 2. Run it!
+
   ```
   cd ~/Documents/React-Native-Projects
   react-native run-ios
   ```
+  
 3. Update it (when necessary)
+
   ```
   cd ~/Documents/React-Native-Projects
   git fetch upstream
@@ -94,16 +102,11 @@ Every project is stored in what's called a repository, or "repo" for short, whic
   git merge upstream/master
   ```
   
-## Contributing
-Traditionally contributing to a github repo 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-## History
-TODO: Write history
-## Credits
-TODO: Write credits
-## License
-TODO: Write license
+## How to contribute (Commands included)
+
+## Credits (In no particular order)
+| Management | Programmers |
+| :-------------: |:-------------:|
+| Mr. Feldman | Brian Tanabe |
+| Alexander Czarnecki | Armin Thomas |
+| Bradley Hart | William Ryan |
