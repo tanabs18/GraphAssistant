@@ -41,6 +41,7 @@ Every project is stored in what's called a repository, or "repo" for short, whic
   ```
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   ```
+  
 7. Install [npm](https://nodejs.org/en/)
 8. Make sure the iOS Simulator is downloaded and functional (Availible under m
 9. Install the React-Native dependencies by pasting the following commands into Terminal
@@ -49,21 +50,25 @@ Every project is stored in what's called a repository, or "repo" for short, whic
   brew install node
   brew install watchman
   ```
+  
 10. Install React-Native by pasting the following command into Terminal
 
   ```
   npm install -g react-native-cli
   ```
+  
   Note: If you get a permission error, paste the following command instead
   
   ```
   sudo npm install -g react-native-cli
   ```
+  
   If you get the error "Cannot find module 'npmlog'" paste the following command and then try again
   
   ```
   curl -0 -L http://npmjs.org/install.sh | sudo sh
   ```
+  
 11. Test that it all works by pasting the following commands (one at a time)
 
   ```
@@ -103,7 +108,12 @@ Every project is stored in what's called a repository, or "repo" for short, whic
   ```
   
 ## How to contribute (Commands included)
+1. Fork the app and update it
 
+   This is done during setup
+   
+2. TODO
+  
 ## Credits (In no particular order)
 | Management | Programmers |
 | :-------------: |:-------------:|
