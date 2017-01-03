@@ -22,9 +22,13 @@ Every project is stored in what's called a repository, or "repo" for short, whic
 
    There are three levels of saved files in Git. The first is your working directory, which is updated every time you save your code. The second is the staging area, where code is permenantly saved on to your local disk. This is done by what's called "committing." Commits must be paired with a message, which generally explains what edits are contained. Messages typically look something like "Update readme.md" or "Fix toolbar bug." The grammar is weird.
 
-6. Pull your changes
+6. Push your changes
 
-   The hird level of saved files in Git is the official repo. While you can "push" commits to your own individual project repos, there are often conflicting commits within shared codebases. This is solved by using "pull". This pushes the code to the official repo, but does not add it to the actual codebase. Instead, others can edit and make comments to your commit, until it is deemed satisfactory. Then it is "merged," where it replaces the old code.
+   The third level of saved files in Git is the web-based repo. Once you've committed your saves, you simply "push" your commits, essentially backing them up. This saves your commits to your forked repo.
+
+7. Submit a pull request
+
+   While you can "push" commits to your own forked repo, you still need to push your changes to the actual codebase, which is difficult since there are often multiple commits to be addede. This is solved by using "pull requests". This pushes the code to the official repo, but does not add it to the actual codebase. Instead, others can edit and make comments to your commit, until it is deemed satisfactory. Then it is "merged," where it replaces the old code.
 
 ## Getting Started on the Project
 
@@ -108,11 +112,35 @@ Every project is stored in what's called a repository, or "repo" for short, whic
   ```
   
 ## How to contribute (Commands included)
-1. Fork the app and update it
+1. Fork the app, clone it, and update it (done during setup)
+2. Create a feature branch
 
-   This is done during setup
+   Create a new branch ```git branch BRANCHNAME```
+   Switch to that branch ```git checkout BRANCHNAME```
+   Alternatively, do both at the same time ```git checkout -b BRANCHNAME```
+   Check which branch you're on ```git status```
+   See all branches ```git branch```
+
+3. Commit your edits
+
+   ```
+   git commit -a -m "MESSAGE"
+   ```
    
-2. TODO
+4. Push your edits to your forked repo
+
+   ```
+   git push origin BRANCHNAME
+   ```
+   
+5. Merge your branch with master (in preparation for a pull request)
+
+   ```
+   git checkout master
+   git merge BRANCHTOMERGE
+   ```
+   
+6. Submit a pull request
   
 ## Credits (In no particular order)
 | Management | Programmers |
