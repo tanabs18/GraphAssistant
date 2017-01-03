@@ -1,5 +1,31 @@
 # GraphAssistant
 Graphing Assistant for Use in Algebra and Calculus Classes
+
+## What is this?
+Officially, GitHub is a "web-based Git repository hosting service". In laymans terms, it's a free online service to store and share code. In more technical terms, "Git" is a freely availible version control software, and GitHub is where it's all stored. It allows you to revert to previous versions of your codebase, as well as create copies, known as branches, of the code and merge them (allowing multiple people to edit code at the same time). 
+
+Every project is stored in what's called a repository, or "repo" for short, which is linked to your user account. This allows each repo to be accessed at github.com/USERNAME/REPONAME. Editing a shared codebase on GitHub follows a simple procedure:
+
+1. Create an account!
+2. Fork the repo
+
+⋅⋅⋅ This means making a copy of the repo. This is a way to make sure you can play with the code however you like, and keep it separate from the production (in use) code. You can keep this code up to date by syncing it, but we'll get to that later.
+
+3. Create a branch (optional)
+
+⋅⋅⋅ Branches are copies of the code (which is techincally also a copy). While the main code resides on the "Master" branch, features in development have their own branches. For example, if you were building a new toolbar, but also adding a search feature, you would create two branches, hypothetically named "Toolbar" and "Search." The purpose of this is to prevent a small bug in the Toolbar from preventing testing the Search function. 
+
+⋅⋅⋅ While often times branching code is used as an alternative to forking code, we won't be doing this. It does offer the benefit of others seeing and editing your branches, but it's literally harder to do (more commands). Instead you can use branches to keep your own code separated if you desire.
+
+4. Make your edits
+5. Commit!
+
+⋅⋅⋅ There are three levels of saved files in Git. The first is your working directory, which is updated every time you save your code. The second is the staging area, where code is permenantly saved on to your local disk. This is done by what's called "committing." Commits must be paired with a message, which generally explains what edits are contained. Messages typically look something like "Update readme.md" or "Fix toolbar bug." The grammar is weird.
+
+6. Pull your changes
+
+⋅⋅⋅ The hird level of saved files in Git is the official repo, which is changed by "pulling" your changes. While you can "push" changes to your own repos, there are often conflicting commits within shared codebases, requiring pull requests. This pushes the code to the official repo, but TODO
+
 ## Setting up React-Native (Enabling your computer to run the app)
 1. Make sure you have Mac OS Version 10.11.5 or later
 2. Install Xcode 8 or later
@@ -47,9 +73,26 @@ Graphing Assistant for Use in Algebra and Calculus Classes
 ## Setting up the App
 1. Clone the app
   ```
-  
+  cd ~/Documents/React-Native-Projects
+  git clone https://github.com/tanabs18/GraphAssistant.git
+  git remote add upstream https://github.com/tanabs18/GraphAssistant.git
+  git remote -v
   ```
+2. Run it!
+  ```
+  cd ~/Documents/React-Native-Projects
+  react-native run-ios
+  ```
+3. Update it (when necessary)
+  ```
+  cd ~/Documents/React-Native-Projects
+  git fetch upstream
+  git checkout master
+  git merge upstream/master
+  ```
+  
 ## Contributing
+Traditionally contributing to a github repo 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
