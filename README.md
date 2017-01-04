@@ -101,14 +101,14 @@ Every project is stored in what's called a repository, or "repo" for short, whic
 2. Run it!
 
   ```
-  cd ~/Documents/React-Native-Projects
+  cd ~/Documents/React-Native-Projects/GraphAssistant
   react-native run-ios
   ```
   
 3. Update it (when necessary)
 
   ```
-  cd ~/Documents/React-Native-Projects
+  cd ~/Documents/React-Native-Projects/GraphAssistant
   git fetch upstream
   git checkout master
   git merge upstream/master
