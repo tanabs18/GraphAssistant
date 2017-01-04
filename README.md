@@ -142,9 +142,14 @@ Every project is stored in what's called a repository, or "repo" for short, whic
    
 6. Submit a pull request
   
+  Follow the instructions [here](https://help.github.com/articles/creating-a-pull-request-from-a-fork/). 
+  
 ## Credits (In no particular order)
 | Management | Programmers |
 | :-------------: |:-------------:|
 | Mr. Feldman | Brian Tanabe |
 | Alexander Czarnecki | Armin Thomas |
 | Bradley Hart | William Ryan |
+
+## ReadMe Version: 1.0
+
