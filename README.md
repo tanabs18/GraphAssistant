@@ -1,6 +1,9 @@
 # GraphAssistant
 Graphing Assistant for Use in Algebra and Calculus Classes
 
+### Note to Multi Guys
+I wrote a quick intro to GitHub, the development process, and setting up React-Native below. It might seem hairy at first, but if you read it through you should get a good idea of how it all works. If you ever feel lost, don't worry. Most people don't know how to use git or how it works, and simply use a few memorized commands. After this guide, you'll officially be more advanced than a lot of people who use git on a regular basis.
+
 ## What is GitHub?
 Officially, GitHub is a "web-based Git repository hosting service". In laymans terms, it's a free online service to store and share code. In more technical terms, "Git" is a freely availible version control software, and GitHub is where it's all stored. It allows you to revert to previous versions of your codebase, as well as create copies, known as branches, of the code and merge them (allowing multiple people to edit code at the same time). 
 
