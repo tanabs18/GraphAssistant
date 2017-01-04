@@ -154,5 +154,8 @@ Every project is stored in what's called a repository, or "repo" for short, whic
 | Alexander Czarnecki | Armin Thomas |
 | Bradley Hart | William Ryan |
 
-## ReadMe Version: 1.0
+## To Do:
+1. Write a to-do list
+
+### ReadMe Version: 1.0
 
