@@ -13,7 +13,7 @@ Every project is stored in what's called a repository, or "repo" for short, whic
 
 3. Create a branch (optional)
 
-   Branches are copies of the code (which is techincally also a copy). While the main code resides on the "Master" branch, features in development have their own branches. For example, if you were building a new toolbar, but also adding a search feature, you would create two branches, hypothetically named "Toolbar" and "Search." The purpose of this is to prevent a small bug in the Toolbar from preventing testing the Search function. 
+   Branches are simply alternate versions of the code. While the main code resides on the "Master" branch, features in development have their own branches. For example, if you were building a new toolbar, but also adding a search feature, you would create two branches, hypothetically named "Toolbar" and "Search." The purpose of this is to prevent a small bug in the Toolbar from preventing testing the Search function. 
 
    While often times branching code is used as an alternative to forking code, we won't be doing this. It does offer the benefit of others seeing and editing your branches, but it's literally harder to do (more commands). Instead you can use branches to keep your own code separated if you desire.
 
